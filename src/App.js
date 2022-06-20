@@ -19,6 +19,7 @@ function App() {
       <h1>App 2</h1>
       <h2>Token: {token}</h2>
       <button onClick={logout}>Logout</button>
+      <a href={window.location.origin}>Go back</a>
     </div>
   );
 }
