@@ -12,6 +12,7 @@ function App() {
 
   function logout() {
     Cookies.remove("token");
+    setToken();
   }
 
   return (
