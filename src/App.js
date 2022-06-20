@@ -11,7 +11,7 @@ function App() {
   }, []);
 
   function logout() {
-    Cookies.remove("token");
+    Cookies.remove("token", { domain: ".equihua-dy.dev" });
     setToken();
   }
 
