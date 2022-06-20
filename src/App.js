@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Cookies from "js-cookie";
 
 const domains = ["http://localhost:3000", "http://localhost:3001"];
 
@@ -29,11 +30,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <iframe id="ifr" src={domains[0]}></iframe>
         <img src={logo} className="App-logo" alt="logo" />
         <button onClick={fetchData}>Get data from host</button>
-        <button onClick={() => console.log(localStorage)}>
-          print localStorage
+        <button onClick={() => console.log(Cookies.get("session"))}>
+          print coockie session
         </button>
       </header>
     </div>
